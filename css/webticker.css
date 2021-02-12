@@ -1,0 +1,86 @@
+/* liScroll styles */
+
+.tickeroverlay-left{
+	background-image:url('left.html');
+	display:block;
+	pointer-events:none;
+	position:absolute;
+	z-index:30;
+	height:12px;
+	width:150px;
+	top:0;
+	left:-2px;
+}
+	
+.tickeroverlay-right{
+	background-image:url('right.html');
+	display:block;
+	pointer-events:none;
+	position:absolute;
+	z-index:30;
+	height:12px;
+	width:150px;
+	top:0;
+	right:-2px;
+}
+.tickercontainer {
+  color: #333;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+.tickercontainer .mask {
+  height: 18px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+
+ul.newsticker {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all 0s linear;
+-moz-transition: all 0s linear;
+-o-transition: all 0s linear;
+transition: all 0s linear;
+}
+
+
+ul.newsticker li {
+  float: left;
+  margin: 0;
+  padding-right: 15px;
+  font-size: 13px;
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #ff0000;
+font: bold 10px Verdana;
+margin: 0 50px 0 0;
+} 
+ul.newsticker span {
+margin: 0 10px 0 0;
+} 
+
+#webticker2{
+	float:right;
+}
+
+#webticker2 li {
+float: right; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding-left: 15px;
+/*background: #fff;*/
+}
+
+
+
+.newsticker {
+  background-color: #f6b721;
+}

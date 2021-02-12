@@ -1,0 +1,1480 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500);
+
+/*@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);*/
+
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body
+{
+ font-family:'Roboto', Helvetica,Arial,sans-serif !important;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+body {
+
+  color: #444242;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  /* overflow:hidden; */
+}
+
+
+.content-center {
+  margin: 0 auto;
+  padding: 25px 15px;
+  position: relative;
+  width: 80%;
+}
+.logo {
+  text-align: center;
+}
+
+/*.centerPetal {
+  left: 40%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 136%;
+  width: 210px;
+} */
+
+/*.centerPetal {
+  left: 40%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  width: 210px;
+}
+*/
+
+.branchImageLogo {
+  height: 80px;
+  object-fit: contain;
+}
+
+.branchISTLogo {
+  margin-top: 20px;
+}
+
+.centerPetal {
+  left: 42%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 210px;
+  z-index: 9;
+}
+
+.centerPetal img {
+  width: 100%;
+}
+
+
+#preloader {
+background-color: #fff;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+#loading-animation {
+  background-image: url("../images/srmlogo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 150px;
+  left: 45%;
+  position: absolute;
+  top: 39%;
+  width: 150px;
+  /*-webkit-animation:rotate 4s linear 1;
+    -moz-animation:rotate 4s linear 1;
+    animation:rotate 4s linear 1;*/
+
+    -webkit-animation:fadeinout 1.5s linear 1;
+    -moz-animation:fadeinout 1.5s linear 1;
+    animation:fadeinout 1.5s linear 1;
+}
+
+@-webkit-keyframes fadeinout {
+  0%   { opacity: 0; }
+  50%   { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fadeinout {
+  0%   { opacity: 0; }
+  50%   { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fadeinout {
+  0%   { opacity: 0; }
+  50%   { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+@keyframes fadeinout {
+  0%   { opacity: 0; }
+  50%   { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+
+/*@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}*/
+
+
+.companyInfo {
+  display: inline-block;
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  min-height: 400px;
+  padding: 0;
+  position: relative;
+  top: 200px;
+  width: 100%;
+}
+
+.companyInfo li {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  -webkit-transition:all 0.4s ease 0s;
+  -moz-transition:all 0.4s ease 0s;
+  -ms-transition:all 0.4s ease 0s;
+  -o-transition:all 0.4s ease 0s;
+  transition:all 0.4s ease 0s;
+}
+
+
+
+.companyInfo a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.companyInfo .iconBox {
+ /* border-bottom: 1px solid #a78a6a;*/
+  display: inline-block;
+  float: left;
+  width: 36px;
+}
+
+.iconBox > img {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/*.iconTitle {
+  border-bottom: 1px solid #a78a6a;
+  color: #5f4528;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  padding-bottom: 3px;
+  padding-right: 30%;
+  width:100%;
+  width: 170px;
+   margin-bottom: 6px;
+}*/
+
+.iconTitle {
+  border-bottom: 1px solid #a78a6a;
+  color: #5f4528;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  width: 245px;
+}
+
+.spritual .iconTitle
+{
+  width:220px;
+}
+.service3 .iconTitle, .serviceTop .iconTitle {
+ /* padding-left: 30%;*/
+  padding-right: 0;
+}
+
+.service1 .right-content p, .service3 .right-content p, .serviceTop .right-content p  {
+  margin-left: -31%;
+}
+
+
+
+.companyInfo .service4 .iconBox, .companyInfo .service3 .iconBox {
+  border-bottom: medium none;
+  margin-top: -20px;
+}
+
+.service4 .right-content, .service3 .right-content {
+  top: 15px;
+}
+
+.service3 .right-content::before {
+  border-bottom: medium none;
+  border-right: 1px solid #a78a6a;
+  content: "";
+  display: block;
+  height: 25px;
+  left: 100%;
+  position: absolute;
+  top: 4px;
+}
+
+.service4 .right-content::before {
+  border-right: 1px solid #a78a6a;
+  border-bottom: none;
+  content: "";
+  display: block;
+  height: 25px;
+  left: -28px;
+  position: absolute;
+  top: 4px;
+  width:0;
+}
+
+
+.right-content::before {
+  border-bottom: 1px solid #a78a6a;
+  content: "";
+  display: block;
+  left: -45px;
+  position: absolute;
+  top: 41px;
+  width: 30px;
+}
+
+
+
+
+
+.serviceTop .right-content::before {
+  left: 108%;
+}
+
+
+
+
+
+.companyInfo .logo1 .iconBox {
+  border-bottom: 1px solid #a78a6a;
+}
+
+.logo1 .right-content::before {
+  display: none;
+}
+
+.right-content {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  width: 80%;
+}
+
+.right-content p {
+  color: #58585b;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 0 !important;
+  width: 132%;
+}
+
+.companyInfo .slantline {
+  border-top: 1px solid #a78a6a;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 96%;
+  top: 89px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  width: 77%;
+}
+
+/*.companyInfo .slantline {
+  border-top: 1px solid #a78a6a;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 92%;
+  top: 120px;
+  -webkit-transform: rotate(-42deg);
+  -moz-transform: rotate(-42deg);
+  -ms-transform: rotate(-42deg);
+  -o-transform: rotate(-42deg);
+  transform: rotate(-42deg);
+  width: 65%;
+}*/
+
+
+
+.right-content
+{
+-webkit-transition:all 0.4s ease 0s;
+  -moz-transition:all 0.4s ease 0s;
+  -ms-transition:all 0.4s ease 0s;
+  -o-transition:all 0.4s ease 0s;
+  transition:all 0.4s ease 0s;
+  opacity:0;
+   float: left;
+  margin-left: 10px;
+  position: relative;
+  width: 80%;
+}
+
+/*************************************** SERVICE 1***************************/
+.service1 .right-content::before {
+  left: 108%;
+}
+.companyInfo .service1 {
+  height: 0;
+  left: 50%;
+  top: 0;
+  width: 0;
+  opacity:0;
+}
+.service1 .right-content
+{
+ -webkit-transform: translate3d(-273%, 0px, 0px);
+ -moz-transform: translate3d(-273%, 0px, 0px);
+ -o-transform: translate3d(-273%, 0px, 0px);
+ -ms-transform: translate3d(-273%, 0px, 0px);
+ transform: translate3d(-273%, 0px, 0px);
+}
+
+.companyInfo .service1 .slantline {
+  left: 96%;
+  top: 88px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  transform: rotate(25deg);
+  width: 75%;
+}
+
+
+.companyInfo .service2 {
+  height: 0;
+  right: 50%;
+  top: 25px;
+  width: 0;
+  opacity:0;
+}
+.service2 .right-content
+{
+ -webkit-transform: translate3d(273%, 0px, 0px);
+ -moz-transform: translate3d(273%, 0px, 0px);
+ -ms-transform: translate3d(273%, 0px, 0px);
+ -o-transform: translate3d(273%, 0px, 0px);
+ transform: translate3d(273%, 0px, 0px);
+ bottom:88px;
+ right:-20px;
+}
+/******************************SERVICE 12 *****************************/
+.companyInfo .serviceExtra {
+  height: 0;
+  right: 50%;
+  top: 250px;
+  width: 0;
+  opacity:0;
+}
+
+
+.serviceExtra .right-content {
+  bottom: 3px;
+  right: -36px;
+}
+
+/*******************************************************************************************/
+
+.right-content.animateText
+{
+ -webkit-transform: translate3d(0px, 0px, 0px) !important;
+ -moz-transform: translate3d(0px, 0px, 0px) !important;
+ -ms-transform: translate3d(0px, 0px, 0px) !important;
+ -o-transform: translate3d(0px, 0px, 0px) !important;
+ transform: translate3d(0px, 0px, 0px) !important;
+ opacity:1 !important;
+}
+
+.companyInfo .logo1 {
+  left: 32%;
+  top: 200%;
+  width: 0;
+  opacity:0;
+  height:0;
+}
+
+
+.companyInfo .logo1 .slantline {
+  border-left: 1px solid #f6b821;
+  border-top: medium none;
+  height: 96px;
+  margin-top: 60px;
+  right: 4%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 100px;
+}
+
+
+/*.companyInfo .logo1 .slantline {
+  border-left: 1px solid #f6b821;
+  border-top: medium none;
+  height: 140px;
+  margin-top: 22px;
+  right: 4%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 100px;
+}*/
+
+
+.right-content img {
+  width: 100%;
+}
+
+.logo1 .right-content
+{
+ -webkit-transform: translate3d(0, -100% , 0px);
+ -moz-transform: translate3d(0, -100% , 0px);
+ -ms-transform: translate3d(0, -100% , 0px);
+ -o-transform: translate3d(0, -100% , 0px);
+ transform: translate3d(0, -100% , 0px);
+}
+
+
+.companyInfo .service4 {
+  height: 0;
+  right: 50%;
+  top: 71px;
+  width: 0;
+  opacity:0;
+}
+.service4 .right-content
+{
+ -webkit-transform: translate3d(273%, 0px, 0px);
+ -moz-transform: translate3d(273%, 0px, 0px);
+ -ms-transform: translate3d(273%, 0px, 0px);
+ -o-transform: translate3d(273%, 0px, 0px);
+ transform: translate3d(273%, 0px, 0px);
+ right:-36px;
+}
+
+.companyInfo .service4 .slantline {
+  right: 94%;
+  top: 18px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 50%;
+}
+
+/*.companyInfo .service4 .slantline {
+  top: 53px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+*/
+
+
+.companyInfo .service3 {
+  height: 0;
+  left: 50%;
+  top: 71px;
+  width: 0;
+  opacity:0;
+}
+.service3 .right-content
+{
+ -webkit-transform: translate3d(-273%, 0px, 0px);
+ -moz-transform: translate3d(-273%, 0px, 0px);
+ -ms-transform: translate3d(-273%, 0px, 0px);
+ -o-transform: translate3d(-273%, 0px, 0px);
+ transform: translate3d(-273%, 0px, 0px);
+}
+
+
+.companyInfo .service3 .slantline {
+  left: 93%;
+  top: 18px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 49%;
+}
+
+
+/*.companyInfo .service3 .slantline {
+  left: 100%;
+  top: 53px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 53%;
+}*/
+.companyInfo .service3 .iconBox {
+  float: right;
+}
+
+
+.companyInfo .serviceTop {
+  height: 0;
+  left: 50%;
+  top: 0;
+  width: 0;
+  opacity:0;
+}
+.serviceTop .right-content
+{
+ -webkit-transform: translate3d(-273%, 0px, 0px);
+ -moz-transform: translate3d(-273%, 0px, 0px);
+ -o-transform: translate3d(-273%, 0px, 0px);
+ -ms-transform: translate3d(-273%, 0px, 0px);
+ transform: translate3d(-273%, 0px, 0px);
+ bottom:88px;
+ left:14px;
+}
+
+.companyInfo .serviceTop .slantline {
+  left: 96%;
+  top: 25px;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg); /*note*/
+  width: 75%;
+}
+/*.companyInfo .serviceTop .slantline {
+  left: 90%;
+  top: 122px;
+  -webkit-transform: rotate(46deg);
+  -moz-transform: rotate(46deg);
+  -ms-transform: rotate(46deg);
+  -o-transform: rotate(46deg);
+  transform: rotate(46deg);
+}*/
+.companyInfo .serviceTop .iconBox {
+  
+  
+}
+.serviceTop .iconBox{
+  float:right;
+  margin-bottom: 40px;
+}
+
+
+.service1 .right-content, .serviceTop .right-content, .service3 .right-content, .service5 .right-content, .service8 .right-content {
+  text-align: right;
+}
+
+
+
+/*.companyInfo .service5 {
+  left: 50%;
+  top: 261px;
+}*/
+
+.service5 .right-content::before {
+  left: 108%;
+}
+.companyInfo .service5 {
+  height: 0;
+  left: 50%;
+  top: 300px;
+  width: 0;
+  opacity:0;
+}
+/*.service5 .right-content
+{
+ -webkit-transform: translate3d(0px, 300px, 0px);
+ -moz-transform: translate3d(0px, 300px, 0px);
+ -ms-transform: translate3d(0px, 300px, 0px);
+ -o-transform: translate3d(0px, 300px, 0px); dont use
+ transform: translate3d(0px, 300px, 0px);
+}*/
+
+.service5 .right-content {
+ -webkit-transform: translate3d(-273%, 0px, 0px);
+ -moz-transform: translate3d(-273%, 0px, 0px);
+ -o-transform: translate3d(-273%, 0px, 0px);
+ -ms-transform: translate3d(-273%, 0px, 0px);
+  transform: translate3d(-273%, 0px, 0px);
+}
+
+
+.companyInfo .service5 .slantline {
+  left: 260px;
+  top: 0px;
+  -webkit-transform: rotate(-27deg);
+  -moz-transform: rotate(-27deg);
+  -ms-transform: rotate(-27deg);
+  -o-transform: rotate(-27deg);
+  transform: rotate(-27deg);
+  width: 61%;
+  
+}
+
+.companyInfo .service5 .iconBox {
+  float: right;
+}
+
+.service5 .right-content p {
+  margin-left: -31%;
+}
+
+.service5 .iconTitle {
+  /*padding-left: 30%;*/
+  padding-right: 0;
+  text-align: right;
+}
+
+
+
+
+
+
+/*----service 6---*/
+
+.service6 .right-content::before {
+  left: -41px;
+  top: 41px;
+}
+.companyInfo .service6 {
+  height: 0;
+  right: 50%;
+  top: 300px;
+  width: 0;
+  opacity:0;
+}
+.service6 .right-content
+{
+ -webkit-transform: translate3d(273%, 0px, 0px);
+ -moz-transform: translate3d(273%, 0px, 0px);
+ -ms-transform: translate3d(273%, 0px, 0px);
+ -o-transform: translate3d(273%, 0px, 0px);
+ transform: translate3d(273%, 0px, 0px);
+ right:-36px;
+}
+
+
+.companyInfo .service6 .slantline {
+  right: 95%;
+  top: -1px;
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  width: 66%;
+}
+
+/*-------service 6------*/
+
+/*----service 7---*/
+
+.service7 .right-content::before {
+  left: -41px;
+  top: 41px;
+}
+.companyInfo .service7 {
+  height: 0;
+  left: 40%;
+  top: 0;
+  width: 0;
+  opacity:0;
+	 z-index: 9;
+	 width: 300px;
+}
+.service7 .right-content
+{
+ -webkit-transform: translate3d(0px, 273%, 0px);
+ -moz-transform: translate3d(0px, 273%, 0px);
+ -ms-transform: translate3d(0px, 273%, 0px);
+ -o-transform: translate3d(0px, 273%, 0px);
+ transform: translate3d(0px, 273%, 0px);
+}
+
+
+.companyInfo .service7 .slantline {
+  right: 44%;
+  top: -20px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 12%;
+}
+.service7 .right-content  p {
+  position: relative;
+  left: -45px;
+}
+/*-------service 7------*/
+
+
+
+/*-------service 8-----*/
+/*.service5 .right-content
+{
+ -webkit-transform: translate3d(0px, 300px, 0px);
+ -moz-transform: translate3d(0px, 300px, 0px);
+ -ms-transform: translate3d(0px, 300px, 0px);
+ -o-transform: translate3d(0px, 300px, 0px);
+ transform: translate3d(0px, 300px, 0px);
+}*/
+
+.service8 .right-content::before {
+  left: 108%;
+}
+.companyInfo .service8 {
+  height: 0;
+  left: 50%;
+  top: 382px;
+  width: 0;
+  opacity:0;
+}
+
+
+.service8 .right-content {
+ -webkit-transform: translate3d(-283%, 0px, 0px);
+ -moz-transform: translate3d(-283%, 0px, 0px);
+ -o-transform: translate3d(-283%, 0px, 0px);
+ -ms-transform: translate3d(-283%, 0px, 0px);
+  transform: translate3d(-283%, 0px, 0px);
+}
+
+
+.companyInfo .service8 .slantline {
+  left: 93%;
+  top: -16px;
+
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  width: 67%;
+}
+
+/* Service8 Extra1 */
+.companyInfo .serviceExtra1 {
+  height: 0;
+  left: 50%;
+  top: 382px;
+  width: 0;
+  opacity:0;
+}
+
+
+.serviceExtra1 .right-content {
+ -webkit-transform: translate3d(-283%, 0px, 0px);
+ -moz-transform: translate3d(-283%, 0px, 0px);
+ -o-transform: translate3d(-283%, 0px, 0px);
+ -ms-transform: translate3d(-283%, 0px, 0px);
+  transform: translate3d(-283%, 0px, 0px);
+  top: -118px;
+  right: 10px;
+}
+
+
+.companyInfo .serviceExtra1 .slantline {
+  left: 93%;
+  top: -120px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  width: 67%;
+}
+/* ********** */
+.companyInfo .service8 .iconBox {
+  float: right;
+}
+
+.service8 .right-content p {
+  margin-left: -31%;
+}
+
+.service8 .iconTitle {
+  /*padding-left: 30%;*/
+  padding-right: 0;
+  text-align: right;
+}
+
+/*----service 8---*/
+
+.companyInfo .service2 .slantline {
+  right: 96%;
+  top: 25px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg); /*note*/
+  width: 75%;
+}
+
+.companyInfo .serviceExtra .slantline {
+  right: 96%;
+  top: 80px;
+  -webkit-transform: rotate(158deg);
+  -moz-transform: rotate(158deg);
+  -o-transform: rotate(158deg);
+  -ms-transform: rotate(158deg);
+  transform: rotate(158deg); /*note*/
+  width: 75%;
+}
+/*----service 9---*/
+
+.service9 .right-content::before {
+  left: -41px;
+  top: 41px;
+}
+.companyInfo .service9 {
+  height: 0;
+  right: 50%;
+  top: 300px;
+  width: 0;
+  opacity:0;
+}
+.service9 .right-content
+{
+ -webkit-transform: translate3d(283%, 0px, 0px);
+ -moz-transform: translate3d(283%, 0px, 0px);
+ -ms-transform: translate3d(283%, 0px, 0px);
+ -o-transform: translate3d(283%, 0px, 0px);
+ transform: translate3d(283%, 0px, 0px);
+ right:-37px;
+}
+
+.companyInfo .service9 .slantline {
+  right: 92%;
+  top: -16px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 66%;
+}
+
+/*----service 9---*/
+
+
+
+
+
+.companyInfo .logo1 .iconBox {
+  border-color: transparent;
+}
+
+
+.row.nav1 {
+  bottom: 32px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav1 .navbar {
+  margin-bottom: 0;
+}
+
+.nav1 .navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav1 .navbar-inverse .navbar-nav > .active > a, .nav1 .navbar-inverse .navbar-nav > .active > a:hover,.nav1 .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #a78a6a;
+}
+
+.nav1 .navbar-inverse .navbar-nav > li > a::before {
+  border-right: 1px solid #ccc;
+  content: "";
+  display: block;
+  height: 39%;
+  position: absolute;
+  right: -1px;
+  bottom: 4px;
+}
+
+.nav1 .navbar-inverse .navbar-nav > li > a {
+  color: #666;
+  padding: 15px 8px 0;
+}
+
+.nav1 .navbar-inverse .navbar-nav > li > a:hover, .nav1 .navbar-inverse .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #a78a6a;
+}
+
+.nav1 .dropdown-menu > li > a {
+  border-bottom: 1px solid #a78a6a;
+  margin: 0 6px;
+  padding: 5px 15px 10px;
+}
+
+
+.nav1 .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  width: 575px;
+}
+
+.logoSpace {
+  display: inline-block !important;
+  height: 37px;
+  width: 10px;
+}
+.nav1 .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.logo1 .right-content img {
+  margin-left: 19px;
+}
+
+.strip-left {
+  background-color: #fff;
+  height: 43px;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 1000px;
+}
+
+.strip-right {
+  background-color: #fff;
+  height: 43px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 1000px;
+   z-index: 1;
+}
+.footer-text
+{
+ position:absolute;
+}
+
+.footer-text {
+  background-color: #a78a6a;
+  bottom: -100px;
+  color: #fff;
+  font-size: 13px;
+  left: 0;
+  line-height: 17px;
+  padding: 5px 0 1px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 99;
+}
+
+
+/*.explorebtn {
+  border: 1px solid #a78a6a;
+  border-radius: 42px;
+  bottom: -45px;
+  color: #a78a6a;
+  font-weight: bold;
+  left: 43%;
+  margin: 0 auto;
+  padding: 6px;
+  position: fixed;
+  text-align: center;
+  width: 165px;
+  z-index: 1;
+  -webkit-transition:all 0.4s all 0s;
+  -moz-transition:all 0.4s all 0s;
+  -ms-transition:all 0.4s all 0s;
+  -o-transition:all 0.4s all 0s;
+  transition:all 0.4s all 0s;
+  text-decoration:none;
+}*/
+
+
+.explorebtn {
+  background-color: #fff;
+    border: 1px solid #a78a6a;
+    border-radius: 42px;
+    bottom: 3px;
+    color: #a78a6a;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 165px;
+    z-index: 9;
+  -webkit-transition:all 0.4s all 0s;
+  -moz-transition:all 0.4s all 0s;
+  -ms-transition:all 0.4s all 0s;
+  -o-transition:all 0.4s all 0s;
+  transition:all 0.4s all 0s;
+}
+
+
+.explorebtn {
+  background-color: #fff;
+  border: 1px solid #a78a6a;
+  border-radius: 42px;
+  bottom: -1px;
+  color: #fff;
+    font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 11px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 165px;
+  z-index: 9;
+  -webkit-transition:all 0.4s ease 0s;
+  -moz-transition:all 0.4s ease 0s;
+  -ms-transition:all 0.4s ease 0s;
+  -o-transition:all 0.4s ease 0s;
+  transition:all 0.4s ease 0s;
+}
+
+.explorebtn::before {
+  background-color: #5f4528;
+  content: "";
+  display: block;
+  height: 100%;
+  left: -4px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: skewX(-24deg);
+  -moz-transform: skewX(-24deg);
+  -ms-transform: skewX(-24deg);
+  -o-transform: skewX(-24deg);
+  transform: skewX(-24deg);
+  width: 107%;
+  z-index: -1;
+}
+
+.explorebtn:hover::before {
+ background-color: #f6b821;
+}
+
+.explorebtn:hover {
+ color:#5f4528;
+ text-decoration:none;
+}
+
+.footer-text > span {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 70%;
+}
+.btnStyle2 {
+  background-color: #f6f3eb;
+  border: 1px dashed #a78a6a;
+  border-radius: 10px;
+  color: #a78a6a;
+  display: inline-block;
+  float: left;
+  line-height: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-top: 31px;
+  padding: 10px;
+  position: relative;
+  width: 250px;
+}
+.btnStyle2 img {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  vertical-align: top;
+  width: 40px;
+}
+
+.btnStyle2 span {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 70%;
+}
+
+	.buttonCenter {
+  display: inline-block;
+}
+.titleText {
+  font-size: 20px;
+  text-align: center;
+}
+.right-content .iconTitle img {
+  width: 30px;
+}
+	.right-content .iconTitle {
+  padding-right: 40px;
+}
+.compIcon {
+  position: absolute;
+  right: 0;
+  width: 30px;
+	-webkit-transition:all 0.4s ease 0s;
+  -moz-transition:all 0.4s ease 0s;
+  -ms-transition:all 0.4s ease 0s;
+  -o-transition:all 0.4s ease 0s;
+  transition:all 0.4s ease 0s;
+}
+
+.companyInfo li:hover .compIcon {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.service2 .compIcon, .service4 .compIcon, .service6 .compIcon, .service7 .compIcon,.service9 .compIcon  {
+  left: 0;
+}
+
+.service2 .right-content .iconTitle, .service4 .right-content .iconTitle, .service6 .right-content .iconTitle, .service7 .right-content .iconTitle,.service9 .right-content .iconTitle {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+@media screen and (min-width:1600px) and (max-width:2500px)
+{
+/*    #preloader {
+  left: 2.5%;
+  top: -9.5%;
+}*/
+.logoSpace::before, .logoSpace::after {
+  width: 354%;
+}
+
+	.content-center {
+  margin: 5% auto;
+  width: 1290px;
+}
+
+/*.explorebtn {
+  left: 45%;
+}*/
+}
+
+
+
+
+@media screen and (min-width:300px) and (max-width:600px){
+	body {
+  overflow-y: scroll;
+		  position: fixed;
+}
+	body.doneanim {
+  position: relative;
+}
+	.content-center {
+  width: 100%;
+}
+.centerPetal {
+  left: 35%;
+  top: 0;
+  width: 100px;
+  display: none;
+}
+	.companyInfo {
+  top: 0;
+}
+	#loading-animation {
+  height: 100px;
+  left: 35%;
+  top: 15%;
+  width: 100px;
+}
+	.companyInfo li.logo1 {
+  margin-bottom: 0;
+}
+
+.companyInfo li {
+  opacity: 1 !important;
+  position: relative !important;
+  width: 100% !important;
+	left: 0 !important;
+	height: auto !important;
+	top: 0 !important;
+	 margin-bottom: 40px;
+}
+	.right-content {
+  opacity: 1 !important;
+  width: 80%;
+		transform: translate3d(0%, 0px, 0px) !important;
+}
+	.companyInfo .logo1 .iconBox {
+  border-color: transparent;
+  display: none;
+}
+	.companyInfo .logo1 {
+  text-align: center;
+}
+	.logo1 .right-content img {
+  margin-left: -22px;
+  margin-top: -33px;
+  width: 316px;
+  text-align: center;
+}
+.right-content p {
+  width: 110%;
+  margin-left: 0 !important;
+}
+	.service3 .right-content p, .serviceTop .right-content p {
+  margin-left: 0;
+}
+	.logo1 .right-content {
+  width: 100%;
+}
+.footer-text {
+  bottom: 0;
+}
+	.footer-text > span {
+  display: none;
+}
+	.companyInfo .slantline {
+  display: none;
+}
+	.service5 .right-content {
+ -webkit-transform: translate3d(-273%, 0px, 0px);
+ -moz-transform: translate3d(-273%, 0px, 0px);
+ -o-transform: translate3d(-273%, 0px, 0px);
+ -ms-transform: translate3d(-273%, 0px, 0px);
+  transform: translate3d(-273%, 0px, 0px);
+}
+
+
+
+
+.companyInfo .service7 .iconBox {
+  float: right;
+}
+
+.service7 .right-content p {
+  margin-left: -31%;
+  left: 0;
+	text-align: right;
+}
+
+.service7 .iconTitle {
+  padding-right: 40px !important;
+  text-align: right;
+}
+.service7 .compIcon {
+  left: inherit;
+}
+	.service7 .right-content::before {
+  left: 108%;
+}
+	.service7 .right-content {
+  text-align: right;
+}
+	.companyInfo .service4 .iconBox, .companyInfo .service3 .iconBox {
+  margin-top: 0;
+}
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:900px){
+.centerPetal {
+  width: 140px;
+}
+#loading-animation {
+  height: 100px;
+  width: 100px;
+}
+.content-center {
+  width: 100%;
+}
+	.right-content p {
+  display: none;
+}
+	.footer-text > span {
+  display: none;
+}
+	.companyInfo .logo1 {
+  left: 23%;
+}
+	.companyInfo .serviceTop .slantline {
+  left: 99%;
+  top: 54px;
+  width: 28%;
+}
+
+.companyInfo .service1 .slantline {
+  left: 99%;
+  top: 54px;
+  width: 28%;
+}
+
+.companyInfo .slantline {
+  right: 93%;
+  top: 54px;
+  width: 28%;
+}
+	.right-content::before {
+  display: none !important;
+}
+	.iconBox > img {
+  display: none;
+}
+.compIcon {
+  margin-right: -40px;
+}
+	.companyInfo .service3 .slantline {
+  left: 92%;
+  top: 56px;
+  width: 20%;
+}
+	.companyInfo .service4 .slantline {
+  right: 94%;
+  top: 56px;
+  width: 20%;
+}
+.companyInfo .service3,	.companyInfo .service4 {
+  top: 57px;
+}
+	.companyInfo .service5 .slantline {
+  left: 101%;
+  top: 29px;
+  width: 25%;
+}
+	.companyInfo .service6 .slantline {
+  right: 94%;
+  top: 31px;
+  width: 23%;
+}
+	.companyInfo .service7 {
+  left: 36%;
+}
+	.companyInfo .logo1 .slantline {
+  top: 80px;
+}
+
+
+}
+
+@media screen and (min-width:901px) and (max-width:1350px){
+.companyInfo .serviceTop .slantline {
+  left: 93% !important;
+  top: 88px;
+  transform: rotate(45deg) !important;
+  width: 45% !important;
+}
+.content-center {
+  width: 90% !important;
+}
+.companyInfo .service2 .slantline {
+  right: 93% !important;
+  top: 89px !important;
+  transform: rotate(-45deg) !important;
+  width: 45% !important;
+}
+.companyInfo .logo1 .slantline {
+  right: 10.1% !important;
+}
+.logo1 .right-content img {
+  margin-left: 6px !important;
+  width: 90% !important;
+}
+.companyInfo .service3 .slantline {
+  width: 35% !important;
+}
+.companyInfo .service4 .slantline {
+  width: 29% !important;
+}
+.companyInfo .service5 .slantline {
+  left: 94.2% !important;
+  top: 5px !important;
+  transform: rotate(-47deg) !important;
+  width: 33% !important;
+}
+.companyInfo .service9 .slantline {
+  right: 95%;
+  top: 11px;
+  width: 35%;
+}
+.companyInfo .service8 .slantline {
+  left: 95%;
+  top: 11px;
+  width: 35%;
+}
+}
