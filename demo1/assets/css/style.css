@@ -76,9 +76,7 @@ a, a:hover{
   display: flex;
   align-items:center;
   justify-content: center;
-  animation: breath 30s linear infinite;
-  background: url("../images/page-bg.jpg") center bottom no-repeat #43576c;
-  background-size: cover;
+  background: #FFF;
 }
 
 .container{
@@ -89,13 +87,12 @@ a, a:hover{
 .logo {
   width: 183px;
   height: 183px;
-  background: radial-gradient( rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
   border-radius: 50%;
   position: relative;
   display: block;
   z-index: 99;
   margin: 183px auto;
-  box-shadow: 0px 0px 25px 3px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -107,8 +104,8 @@ a, a:hover{
   height: 150%;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation: pulsate1 2s;
-  animation: pulsate1 2s;
+  -webkit-animation: pulsate1 3s;
+  animation: pulsate1 3s;
   -webkit-animation-direction: forwards;
   animation-direction: forwards;
   -webkit-animation-iteration-count: infinite;
@@ -117,18 +114,19 @@ a, a:hover{
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, .75);
+  border: 5px solid rgba(0, 0, 0, 0.1);
   top: -25%;
   left: -25%;
-  background: rgba(198, 16, 0, 0);
+  z-index: -1;
+  background: rgba(0, 0, 0, 0);
 }
 
 @-webkit-keyframes pulsate1 {
   0% {
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
     opacity: 1;
-    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0px 0px 25px 3px rgba(0, 0, 0, 0.05), 0px 0px 25px 10px rgba(0, 0, 0, 0.05);
   }
   100% {
     -webkit-transform: scale(1);
@@ -141,10 +139,10 @@ a, a:hover{
 
 @keyframes pulsate1 {
   0% {
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
     opacity: 1;
-    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0px 0px 25px 3px rgba(0, 0, 0, 0.05), 0px 0px 25px 10px rgba(0, 0, 0, 0.05);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -163,13 +161,15 @@ a.left-side{
 	display: flex;
 	align-items: center;
 	padding: 10px 100px 5px 15px;
-	color: #FFF;
+	color: #666;
+	transition:0.5s ease;
 }
+
 a.left-side img{
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	background: #FFF;
+	background: #e4e4e4;
 	padding: 10px;
 	border-radius: 50%;
 	transition:0.5s ease;
@@ -180,7 +180,7 @@ a.left-side:before{
 	right:120px;
 	bottom: -10px;
 	content:"\27F6";
-	color:#FFF;
+	color:#da2927;
 	opacity: 0;
 	font-size: 24px;
 	transition:0.5s ease;
@@ -199,7 +199,8 @@ a.right-side{
 	display: flex;
 	align-items: center;
 	padding: 10px 15px 5px 100px;
-	color: #FFF;
+	color: #666;
+	transition:0.5s ease;
 }
 a.right-side.ramapuram{
 	padding: 0px 5px 15px 100px;
@@ -208,7 +209,7 @@ a.right-side img{
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	background: #FFF;
+	background: #e4e4e4;
 	padding: 10px;
 	border-radius: 50%;
 	transition:0.5s ease;
@@ -219,7 +220,7 @@ a.right-side:before{
 	left:80px;
 	bottom: -10px;
 	content:"\27F6";
-	color:#FFF;
+	color:#da2927;
 	font-size: 24px;
 	opacity: 0;
 	transition:0.5s ease;
@@ -228,6 +229,11 @@ a.right-side:before{
 a.right-side:hover:before{
 	left:100px;
 	opacity: 1;
+	transition:0.5s ease;
+}
+
+a.left-side:hover, a.right-side:hover{
+	color: #054f9e;
 	transition:0.5s ease;
 }
 
@@ -539,8 +545,8 @@ a.right-side:hover:before{
 }
 
 footer{
-	border-top: 1px solid rgba(255,255,255,0.2);
-	color: rgba(255,255,255,0.5);
+	border-top: 1px solid rgba(0,0,0,0.2);
+	color: rgba(0,0,0,0.5);
 	font-size: 12px;
 	text-align: center;
 	padding: 10px 0px;
@@ -669,12 +675,9 @@ footer{
 }
 @media (max-width: 767px){
 	body{
-	  background: url("../images/page-bg-mob.jpg") center bottom no-repeat #43576c fixed;
-	  background-size: cover;
 	  overflow-x: hidden;
 	  height: auto;
 	  min-height: auto;
-	  animation: breath 30s linear infinite;
 	}
 	.container{
 		min-height: auto;
@@ -723,7 +726,7 @@ footer{
 		padding: 15px 5px 30px 100px;
 		margin-bottom: 20px;
 		text-align: left;
-		border-bottom: 1px solid rgba(255,255,255,0.2);
+		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 	a.left-side span, a.right-side span{
 		animation-name: inherit !important;
